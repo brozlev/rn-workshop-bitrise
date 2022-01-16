@@ -3,10 +3,10 @@ format_version: '11'
 default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 project_type: react-native
 trigger_map:
-- push_branch: master
+- push_branch: main
   workflow: publish
 - pull_request_source_branch: "*"
-  pull_request_target_branch: master
+  pull_request_target_branch: main
   workflow: ci
 workflows:
   _git-clone:
